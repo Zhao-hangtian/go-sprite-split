@@ -1,5 +1,4 @@
-[中文版本](https://github.com/Zhao-hangtian/go-sprite-split#%E9%9B%AA%E7%A2%A7%E5%9B%BE%E5%88%87%E5%89%B2%E5%B7%A5%E5%85%B7) | [English Version](https://github.com/Zhao-hangtian/go-sprite-split#%23%20A%20utility%20for%20sprite%20info%20extract%20and%20split)
-
+[中文版本](https://github.com/Zhao-hangtian/go-sprite-split#%E9%9B%AA%E7%A2%A7%E5%9B%BE%E5%88%87%E5%89%B2%E5%B7%A5%E5%85%B7) | [English Version](https://github.com/Zhao-hangtian/go-sprite-split#a-utility-for-sprite-info-extract-and-split)
 
 # A utility for sprite info extract and split
 A simple PNG image material cutting tool implemented with Go, it performs the non-transparent continuous area cut on the Alpha (transparency channel) using the DFS (Depth-First Search) algorithm, and obtains the position information of the sprite sheet in the material package.
