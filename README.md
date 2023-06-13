@@ -1,3 +1,47 @@
+[中文版本](https://github.com/Zhao-hangtian/go-sprite-split#%E9%9B%AA%E7%A2%A7%E5%9B%BE%E5%88%87%E5%89%B2%E5%B7%A5%E5%85%B7) | [English Version](https://github.com/Zhao-hangtian/go-sprite-split#%23%20A%20utility%20for%20sprite%20info%20extract%20and%20split)
+
+
+# A utility for sprite info extract and split
+A simple PNG image material cutting tool implemented with Go, it performs the non-transparent continuous area cut on the Alpha (transparency channel) using the DFS (Depth-First Search) algorithm, and obtains the position information of the sprite sheet in the material package.
+
+## Function
+1. It achieves the extraction of the sprite sheet position area of the material package (to JSON format file), which can accurately locate the required materials. For why sprite sheets are needed, you can refer to here or here.
+
+2. It achieves the cutting of the sprite sheet, that is, extracting all elements from a large material picture.
+
+## Extension
+1. If you have other desired output formats, feel free to modify this code~
+
+2. If your materials are not PNG images with transparency channels, you can use tools such as GIMP, Photoshop to perform preliminary editing (add transparent layers, magic wand/color selection to remove background).
+
+## Compilation
+`go build main.go`
+
+## Examples
+Original material:
+![图标集](example/icons.png "Demo Icons Picture")
+
+### 1. Extract Sprite Sheet Information
+- Run
+`./main -input example/icons.png -output output  -mode sprite`
+- Output
+![img.png](assets/img.png)
+You will get a split JSON file in the `output` directory, which contains the sprite sheet information:
+![img.png](assets/img_2.png)
+The coordinates are based on the upper left corner as the zero point, `h` is height, `w` is width, `x1`, `y1` are the upper left coordinates, `x2`, `y2` are the lower right coordinates.
+
+The formatted material location JSON information can be conveniently used in your game and app development process.
+
+### 2. Split Large Images
+- Run
+`./main --input example/icons.png`
+- Output
+![img_1.png](assets/img_1.png)
+
+You will get the split small pictures in the `output` directory
+![截图1](assets/Screenshot-1.png "输出截图")
+
+---
 # 雪碧图切割工具
 使用Go实现的一个简单的PNG图片素材切割工具，基于在Alpha（透明度通道）使用DFS（深度优先搜索）算法做非透明连续区域的切割，得到素材包的雪碧图位置信息。
 
