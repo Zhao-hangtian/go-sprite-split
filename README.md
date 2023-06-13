@@ -4,7 +4,7 @@
 A simple PNG image material cutting tool implemented with Go, it performs the non-transparent continuous area cut on the Alpha (transparency channel) using the DFS (Depth-First Search) algorithm, and obtains the position information of the sprite sheet in the material package.
 
 ## Function
-1. It achieves the extraction of the sprite sheet position area of the material package (to JSON format file), which can accurately locate the required materials. For why sprite sheets are needed, you can refer to here or here.
+1. It achieves the extraction of the sprite sheet position area of the material package (to JSON format file), which can accurately locate the required materials. For why sprite sheets are needed, you can refer to [this](https://www.w3schools.com/css/css_image_sprites.asp#:~:text=An%20image%20sprite%20is%20a,server%20requests%20and%20save%20bandwidth.) or [this](https://m.imooc.com/wiki/csssprite-whysprite#:~:text=%E5%88%A9%E7%94%A8%E9%9B%AA%E7%A2%A7%E5%9B%BE%E8%83%BD%E5%A4%9F%E5%BE%88,%E7%9A%84%E5%A4%A7%E5%B0%8F%E8%BF%98%E8%A6%81%E5%B0%8F%E3%80%82).
 
 2. It achieves the cutting of the sprite sheet, that is, extracting all elements from a large material picture.
 
